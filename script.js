@@ -3,11 +3,12 @@ const question = document.querySelector(".question");
 const gif = document.querySelector(".gif");
 const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
+const url = "https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp"
 
 yesBtn.addEventListener("click", () => {
   question.innerHTML = "Aaaaa, I like you too";
-  gif.src =
-    "https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp";
+  if(gift.src === url) return;
+  gift.src = url;
 });
 
 noBtn.addEventListener("mouseover", () => {
